@@ -63,11 +63,11 @@ const HeroContent = () => {
         <motion.div variants={slideInFromLeft(1)}>
            <Dialog>
         <DialogTrigger asChild>
-          <Button className="mt-6 px-6 py-3 text-lg rounded-xl bg-purple-600 hover:bg-purple-700 text-white">
+          <Button className="  mt-6 px-6 py-3 text-lg rounded-xl bg-purple-600 hover:bg-purple-700 text-white">
             Learn More
           </Button>
         </DialogTrigger>
-        <DialogContent className="max-w-2xl rounded-2xl bg-gradient-to-b from-gray-900 to-black text-white border border-gray-800 shadow-2xl">
+        <DialogContent className="  max-w-2xl rounded-2xl bg-gradient-to-b from-gray-900 to-black text-white border border-gray-800 shadow-2xl">
   <DialogHeader>
     <DialogTitle className="text-2xl font-bold text-purple-400">About Me</DialogTitle>
     <DialogDescription className="text-gray-300">
