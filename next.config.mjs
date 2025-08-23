@@ -1,11 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-      images: {
-    domains: ["api.dicebear.com"], // ✅ Add dicebear domain
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+      },
+    ],
+    domains: ["api.dicebear.com"], // agar tumhe dicebear bhi chahiye
   },
 };
 
 export default nextConfig;
+
 
 // import path from 'path';
 // import { fileURLToPath } from 'url';
