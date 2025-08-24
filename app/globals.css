@@ -143,8 +143,3 @@ html {
     @apply bg-background text-foreground;
   }
 }
-
-#__next > div:has([data-sanity]) {
-  position: relative;
-  z-index: 9999;
-}
