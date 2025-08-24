@@ -150,6 +150,14 @@ const Navbar = () => {
           <Link href="mailto:rimshaali9999@gmail.com">
             <Mail className="w-6 h-6 hover:text-purple-400 transition" />
           </Link>
+
+<Link href="/dashboard" className="hover:text-purple-400 transition">
+  Dashboard
+</Link>
+
+
+
+
         </div>
 
         {/* Mobile Menu Button */}
