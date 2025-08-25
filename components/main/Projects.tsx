@@ -62,6 +62,7 @@ interface Project {
   description: string;
   link: string;
   src: string;
+  imageUrl:string;
 }
 
 const Projects = () => {
@@ -78,15 +79,17 @@ const Projects = () => {
       </h1>
 
       <div className="h-full w-full grid gap-10 px-10 md:grid-cols-3">
-        {projects.map((project) => (
-          <ProjectCard
-            key={project._id}
-            src={project.src}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-          />
-        ))}
+      {projects.map((project) => (
+ 
+  
+    <ProjectCard
+      key={project._id}
+      src={project.src || project.imageUrl || "/fallback.png"} 
+      title={project.title}
+      description={project.description}
+      link={project.link}
+    />
+  ))}
       </div>
     </div>
   );

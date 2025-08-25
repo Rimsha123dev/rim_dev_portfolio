@@ -4,7 +4,8 @@ export const projectsQuery = `
     title,
     description,
     link,
-    "src": src.asset->url
+    "src": src.asset->url,
+    imageUrl
   }
 `;
 
@@ -15,6 +16,7 @@ export const blogsQuery = `
     description,
     details,
     date,
-    "src": src.asset->url
+    "src": src.asset->url,
+    imageUrl
   }
 `;

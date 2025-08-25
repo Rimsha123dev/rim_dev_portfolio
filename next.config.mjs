@@ -4,14 +4,22 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.sanity.io",
+        hostname: "cdn.sanity.io",   // Sanity images ke liye
+      },
+      {
+        protocol: "https",
+        hostname: "egjfuznhahhbnmacmoni.supabase.co", // Supabase storage ke liye
+      },
+      {
+        protocol: "https",
+        hostname: "api.dicebear.com", // agar tum avatar use karte ho to
       },
     ],
-    domains: ["api.dicebear.com"], // agar tumhe dicebear bhi chahiye
   },
 };
 
 export default nextConfig;
+
 
 
 // import path from 'path';

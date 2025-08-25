@@ -57,6 +57,7 @@ interface Blog {
   details: string;
   date: string;
   src: string;
+  imageUrl:string;
 }
 
 const Blog = () => {
@@ -78,7 +79,7 @@ const Blog = () => {
         {blogs.map((blog) => (
           <BlogCard
             key={blog._id}
-            src={blog.src}
+            src={blog.src || blog.imageUrl || "/fallback.png"}
             title={blog.title}
             description={blog.description}
             details={blog.details}
